@@ -19,6 +19,8 @@ const Header = () => {
         { name: 'Home', path: '/' },
         { name: 'About', path: '/about' },
         { name: 'Services', path: '/services' },
+        { name: 'Sectors', path: '/sectors' },
+        { name: 'How It Works', path: '/how-it-works' },
         { name: 'FAQ', path: '/faq' },
         { name: 'Contact', path: '/contact' },
     ];
@@ -49,8 +51,8 @@ const Header = () => {
             {/* Main Navigation */}
             <header
                 className={`sticky top-0 z-50 transition-all duration-300 ${isScrolled
-                        ? 'bg-white shadow-lg backdrop-blur-sm bg-opacity-95'
-                        : 'bg-white shadow-md'
+                    ? 'bg-white shadow-lg backdrop-blur-sm bg-opacity-95'
+                    : 'bg-white shadow-md'
                     }`}
             >
                 <nav className="container-custom py-4">
@@ -71,8 +73,8 @@ const Header = () => {
                                     key={link.path}
                                     to={link.path}
                                     className={`font-medium transition-all duration-300 relative group ${isActive(link.path)
-                                            ? 'text-primary-blue'
-                                            : 'text-gray-700 hover:text-primary-teal'
+                                        ? 'text-primary-blue'
+                                        : 'text-gray-700 hover:text-primary-teal'
                                         }`}
                                 >
                                     {link.name}
@@ -112,8 +114,8 @@ const Header = () => {
                                     to={link.path}
                                     onClick={() => setIsMobileMenuOpen(false)}
                                     className={`font-medium py-2 px-4 rounded-lg transition-colors ${isActive(link.path)
-                                            ? 'bg-primary-blue text-white'
-                                            : 'text-gray-700 hover:bg-gray-100'
+                                        ? 'bg-primary-blue text-white'
+                                        : 'text-gray-700 hover:bg-gray-100'
                                         }`}
                                 >
                                     {link.name}
