@@ -152,14 +152,11 @@ const Footer = () => {
                             © {currentYear} TessPay Escrow Services. All rights reserved.
                         </p>
                         <div className="flex gap-6">
-                            <Link to="/privacy" className="hover:text-accent-gold transition-colors">
+                            <Link to="/privacy-policy" className="hover:text-accent-gold transition-colors">
                                 Privacy Policy
                             </Link>
-                            <Link to="/terms" className="hover:text-accent-gold transition-colors">
-                                Terms of Service
-                            </Link>
-                            <Link to="/sitemap" className="hover:text-accent-gold transition-colors">
-                                Sitemap
+                            <Link to="/terms-conditions" className="hover:text-accent-gold transition-colors">
+                                Terms & Conditions
                             </Link>
                         </div>
                     </div>
