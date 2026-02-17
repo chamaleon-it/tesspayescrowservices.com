@@ -1,4 +1,4 @@
-import { useState, FormEvent } from 'react';
+import { useState, type FormEvent } from 'react';
 import { FaUser, FaEnvelope, FaPhone, FaComment } from 'react-icons/fa';
 
 const ContactForm = () => {

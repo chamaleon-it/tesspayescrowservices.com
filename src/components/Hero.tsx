@@ -1,4 +1,4 @@
-import { ReactNode } from 'react';
+import { Link } from 'react-router-dom';
 
 interface HeroProps {
     title: string;
@@ -56,13 +56,13 @@ const Hero = ({
                         {subtitle}
                     </p>
                     <div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-slide-up animation-delay-200">
-                        <a href={primaryButtonLink} className="btn-primary">
+                        <Link to={primaryButtonLink} className="btn-primary">
                             {primaryButtonText}
-                        </a>
+                        </Link>
                         {secondaryButtonText && secondaryButtonLink && (
-                            <a href={secondaryButtonLink} className="btn-outline">
+                            <Link to={secondaryButtonLink} className="btn-outline">
                                 {secondaryButtonText}
-                            </a>
+                            </Link>
                         )}
                     </div>
 
