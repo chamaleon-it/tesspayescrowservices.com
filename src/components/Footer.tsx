@@ -6,10 +6,9 @@ const Footer = () => {
 
     const quickLinks = [
         { name: 'Home', path: '/' },
-        { name: 'About Us', path: '/about' },
-        { name: 'Services', path: '/services' },
-        { name: 'FAQ', path: '/faq' },
-        { name: 'Contact', path: '/contact' },
+        { name: 'Sectors', path: '/sectors' },
+        { name: 'How does escrow work ?', path: '/how-it-works' },
+        { name: 'Contact us', path: '/contact' },
     ];
 
     const services = [

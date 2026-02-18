@@ -11,21 +11,25 @@ const Home = () => {
             icon: <FaHome />,
             title: 'Real Estate Escrow',
             description: 'Secure and efficient escrow services for residential and commercial real estate transactions.',
+            link: '/sectors',
         },
         {
             icon: <FaBriefcase />,
             title: 'Business Escrow',
             description: 'Professional escrow solutions for business acquisitions, mergers, and asset transfers.',
+            link: '/sectors',
         },
         {
             icon: <FaExchangeAlt />,
             title: 'Exchange Escrow (1031)',
             description: 'Specialized services for tax-deferred 1031 exchanges with expert guidance.',
+            link: '/sectors',
         },
         {
             icon: <FaShieldAlt />,
             title: 'Bulk Sale Escrow',
             description: 'Comprehensive escrow services for bulk sales and inventory transactions.',
+            link: '/sectors',
         },
     ];
 
@@ -89,8 +93,8 @@ const Home = () => {
                 subtitle="Secure, professional, and reliable escrow solutions for real estate, business transactions, and more. Your trusted partner in protecting what matters most."
                 primaryButtonText="Get Started"
                 primaryButtonLink="/contact"
-                secondaryButtonText="Our Services"
-                secondaryButtonLink="/services"
+                secondaryButtonText="Our Sectors"
+                secondaryButtonLink="/sectors"
             />
 
             {/* Services Overview */}

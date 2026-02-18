@@ -15,6 +15,11 @@ const Sectors = lazy(() => import('./pages/Sectors'));
 const HowItWorks = lazy(() => import('./pages/HowItWorks'));
 const PrivacyPolicy = lazy(() => import('./pages/PrivacyPolicy'));
 const TermsConditions = lazy(() => import('./pages/TermsConditions'));
+const Corporate = lazy(() => import('./pages/Corporate'));
+const RealEstate = lazy(() => import('./pages/RealEstate'));
+const Legal = lazy(() => import('./pages/Legal'));
+const Construction = lazy(() => import('./pages/Construction'));
+const Specialist = lazy(() => import('./pages/Specialist'));
 const NotFound = lazy(() => import('./pages/NotFound'));
 
 // Loading component
@@ -44,6 +49,11 @@ function App() {
                 <Route path="/contact" element={<Contact />} />
                 <Route path="/sectors" element={<Sectors />} />
                 <Route path="/how-it-works" element={<HowItWorks />} />
+                <Route path="/corporate" element={<Corporate />} />
+                <Route path="/real-estate" element={<RealEstate />} />
+                <Route path="/legal" element={<Legal />} />
+                <Route path="/construction" element={<Construction />} />
+                <Route path="/specialist" element={<Specialist />} />
                 <Route path="/privacy-policy" element={<PrivacyPolicy />} />
                 <Route path="/terms-conditions" element={<TermsConditions />} />
                 <Route path="*" element={<NotFound />} />
