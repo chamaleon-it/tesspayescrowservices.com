@@ -28,6 +28,8 @@ const Hero = ({
         { value: '99.9%', label: 'Success Rate' },
     ];
 
+    console.log(showStats);
+
     return (
         <section
             className="relative bg-gradient-primary text-white overflow-hidden"
@@ -67,7 +69,7 @@ const Hero = ({
                     </div>
 
                     {/* Stats */}
-                    {showStats && (
+                    {false && (
                         <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8 mt-16 animate-fade-in animation-delay-400">
                             {stats.map((stat, index) => (
                                 <div key={index} className="text-center">
